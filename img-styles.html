@@ -1,0 +1,172 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+<title>Webdev Redesign</title>
+
+<link rel="stylesheet" href="style.css">
+<!--<script src="jquery.js"></script>-->
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+	<div id="header">
+		ITP104tTh: 
+		<br>
+		Web Publishing (Tuesday/Thursday section) 
+		<br>
+		Fall 2014 	
+	</div>
+	<br>
+<hr />
+	<br>
+<div id="page-content">
+<div id="top-banner">
+    [Lecture] img, styles, good code
+	</div>
+
+<div id="content">
+
+<div id="info-box">
+Before lecture save some images (from Google Images, FB, webdev, etc.) to your computer:
+A picture of yourself
+Some icons or illustrations of newspapers, pencils, teachers and/or computers
+A photograph of something at USC
+To save graphics from the web in most browsers you right-click on an image and then Save Image As (or the equivalent). When you save NOTE where you save it (such as where you build pages for ITP104 on your computer) AND the filename AND file extension you save it as (such as dent.jpg or tommytrojan.gif).
+	</div>
+
+<h4>Classpage link:</h4>
+
+In order for classpage link to work (from your name on the class frontpage):
+
+<ul>
+	<li>In your USC file space (on aludra) you have a directory named "public_html"</li>
+	<li>Your public_html directory has the proper permissions (Global/World permissions Read and Execute). If they are not set properly you will see an error message such as "Permission Denied". </li>
+	<li>In the public_html directory you have a sub-directory named itp104 (not ITP104, not itp 104)</li>
+	<li>That directory ALSO has the proper permissions</li>
+	<li>Your "first web page" is saved as "classpage.html" INSIDE the above itp104 directory. Not in public_html and not any other file name.</li>
+</ul>
+<br>
+If the link on your name from the 104 classpage does not work, troubleshoot the above during lab today.
+
+<br><br>
+
+<h4>FTP Review:</h4>
+
+<ul>
+<li>Use an "FTP" program like Filezilla to connect to the USC server and copy web pages (files) to and from your computer and the USC server.</li>
+<li>Connect with:
+<li>SFTP/Secure FTP (USC will REJECT conenctions that are only FTP)</li>
+<li>Server: aludra.usc.edu</li>
+<li>Username and Password: Your USC email prefix (such as dent) and the pw you use to access your USC email</li>
+</li>
+</ul>
+
+<h4>HTML tags and syntax review:</h4>
+
+<ul>
+<li>Html tags are in lowercase. They are surrounded by "lesser than" and "greater than" brackets. The first thing in a tag is its tag name. If there are any attributes (modifiers) for that tag/object then after a space they are listed in the format attributes="value" ... such as href="page2.html".. with the "value" of the attribute in quotes.</li>
+<li>A special type of "design" instruction can be contained inside a tag as well. It is defined by a style attribute and then has special instructions in quotes. These operate a bit differently than normal tag attributes. An example from Lecture 2 was</li>
+<br>
+<code>body style="color:red; background-color: yellow</code>
+</ul>
+
+<br>
+<h4>'Good code':</h4>
+
+Well formed html should follow some simple ideas/steps:
+<ul>
+<li>Always close your tags, or in the case of non-closing tags like img, hr and br give them internal closes. I.e. if you open a tag, make sure at some point you have closed it with ... and for non-closing tags make sure you give them internal closes</li> 
+<li>Don't violate the "nest order" of tags. If you open up four tags, make sure you close them in the opposite order you opened them. I.e. if put a b then i then u ... then you would need to first close /u then /i then /b </li>
+<li>Required attributes: While most attributes are optional on html tags, some are not. For instance, on the anchor (a) tag, you MUST have at least one attribute (generally href). On the img tag, there is not an image without at least a src attribute. Etc. 
+</li>
+<li>Recommended attributes: Some tags have attributes that should always be scoped out for good practice. The most prominent example of this is the img tag, which should always have its width, height and alt attributes specified. </li>
+<li>Attribute values in quotes: when you set attributes of tags (such as href="page2.html" or src="dent.jpg"), it is safest to ALWAYS surround the value for the attribute in quotes. While there are some attribute values that do not require quotes, it is safest to just put them all inside the marks. In html you can use single or double quotes. </li>
+</ul>
+<br>
+We will learn other "good practices" as the semester goes on. 
+
+<br><br>
+<h4>img tag:</h4>
+
+The img tag displays an image file on a web page. It's core properties are:
+<ul>
+<li>src html attribute: the filename or path + filename for the image (such as src="mypic.gif")</li>
+<li>alt html attribute: the "alternate" text for the image</li>
+<li>width style property: how wide (in pixels) the image should be displayed </li>
+<li>height style property: how tall (in pixels) the image should be displayed </li>
+<li>border-width style propertyr: the width (in pixels) of the border around the image, with "0" being "no border" </li>
+</ul>
+<br>
+So typical image tag might be...
+<br><br>
+<code>< img src="dent.jpg" alt="Picture of Mr. Dent" style="width:75px; height:60px; border-width: 0px" / ></code>
+
+<br><br>
+<h4>Styles:</h4>
+
+HTML/CSS Styles have many components to them, including stylesheets, which we will get into later. For now, think of styles as formatting attributes that you can "turn on" for an objec or section of the page. 
+
+Styles can format:
+<ul>
+	<li>text properties such as its color, font face, size, etc., as well as to special formatting such as transforming text to ALL CAPS or setting the leading or line spacing for a block are</li>
+	<li>margin and spacing properties of blocks</li>
+	<li>background color and image properties of blocks</li>
+	<li>other, specialized properties such as the bullet styles of lists</li>
+</ul>
+
+<br>
+For now we are only going to explore setting style properties inside an html tag. Later in the semester we will get into stylesheets and named styles, and redefing style properties of an html object type. 
+<br><br>
+For formatting sections of text, you will generally put style blocks into paragraph (p) or span (span) tag. Paragraph tags are used to defined a paragraph of text, span tags are used to format any amount of text -- from one letter ro word to multiple paragraphs. The main difference for now is taht paragraphs space themselves out, and that you can use the align attribute of a p tag to make the paragraph right or center aligned. 
+<br><br>
+To define one or more styles you open up a "style" attribute of an html tag, then set the property to one or more style:value settings. For instance
+<br><br>
+<code> < span style="color:red" > </code>
+<br><br>
+would start a block where all of the text is red. If you want to include more than one setting at a time, you separate them with semi-colons. So
+<br><br>
+<code>< span style="color:purple; font-size:24pt" ></code>
+<br><br>
+
+...would start a block of text that is purple and 24 point in size. 
+<br><br>
+Some common style properties you will use a lot are:
+<ul>
+	<li>font-size (typically in measurements such as 18pt or 3in)</li>
+	<li>color (text color)</li>
+	<li>background-color (of an object, from the body to a paragraph to a span tag, named colors like green or hex ones like #4499aa)</li>
+	<li>text-decoration (underline or none -- often used to REMOVE lines from hyperlinks/a)</li>
+	<li>line-height (height of a line, plain number like 2 is line spacing, or measurements such as 18pt)</li>
+	<li>text-alignment (right, left, center) background-image (format uses a url object, such as background-image:url(mypic.gif))</li>
+</ul>
+<br>
+Some basic tips about assigning style properties:
+<br>
+<ul>
+<li>Whereas in html we set values with equal signs, like border="0", in styles you assign values with colons, such as font-size:24pt</li>
+<li>Whereas in html we "quote" attribute values, in styles you (usually) do not put quotes around the "value" for an attribute.</li>
+<li>When you close the tag that has the style settings, all of the styles on that tag are cancelled. So for instance, &tl;span style="color:blue;font-weight:bold"> create blue and bold text... and closing turns off both the blue text switch and the boldness.</li>
+<li>You can nest style commands. So, for instance, maybe you start a section of your page with</li>
+<br>
+<code>< span style="font-family:Verdana" ></code>
+<br><br>
+so that a section of your page has text in the Verdana font. And then inside that block you start another span of
+<br><br>
+<code>< span style="background-color:yellow;" ></code>
+<br><br>
+to create a section where the background color behind the text is yellow. The first instruction (font-family) is still active when the background-color is on (both spans are active at once). Then when you close the first </span> that turns off the MOST RECENT span command (with the background-color instruction). It will take a second </span> to turn off the first instruction (font-family).
+</ul>
+<br><br>
+There are a LOT of style properties you can play with. Some effect text, some will only effect images, and some will effect objects we have not gotten to yet. To start out, take a look a the "Styles Resource" page and try playing around with different styles instructions through span tags.
+<br>
+<div id="info-box">
+Samples: From Fall 2014 here is a link to the dog page from class. NOTE: It is best to right-click the link and then "Save Link As" to save the file to your computer. Also if you want to edit or play around with the page, you want to save the images from the page to your computer paper4.jpg, boxerface.jpg and usccampus.jpg.
+</div>
+</div>
+</div>
+
+</body>
+
+</html>

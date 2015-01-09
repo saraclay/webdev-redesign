@@ -7,20 +7,28 @@
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
+<script>
+$(document).ready(function(){
+  $("#week1").click(function(){
+    
+    var target = $(this).parent().children("#stuff1");
+    $(target).slideToggle();
+  });
 
-<script language="javascript"> 
-function toggle() {
-	var ele = document.getElementById("stuff");
-	var text = document.getElementById("week");
-	if(ele.style.display == "block") {
-    		ele.style.display = "none";
-		//text.innerHTML = "show";
-  	}
-	else {
-		ele.style.display = "block";
-		//text.innerHTML = "hide";
-	}
-} 
+  $("#week2").click(function(){
+    
+    var target = $(this).parent().children("#stuff2");
+    $(target).slideToggle();
+  });
+
+  $("#week3").click(function(){
+    
+    var target = $(this).parent().children("#stuff3");
+    $(target).slideToggle();
+  });
+
+
+});
 </script>
 
 </head>
@@ -31,7 +39,6 @@ function toggle() {
 	<li class="nav-item"><a href="http://webdev.usc.edu">Home</a></li>
 	<li class="nav-item"><a href="http://www.piazza.com" target="_blank">Piazza</a></li>
 	<li class="nav-item"><a href="http://blackboard.usc.edu" target="_blank">Grades</a></li>
-	<li class="nav-item"><a href="#" target="_blank">Office Hours</a></li>
 	<li class="nav-item"><a href="#" target="_blank">Students</a></li>
 </ul>
 
@@ -39,21 +46,79 @@ function toggle() {
 <label for="nav-trigger"></label>
 
 <div class="site-wrap">
-	
+
   <center><h1>ITP 104 tTh: <br> Web Publishing (Tues/Thurs) <br> Spring 2015 </h1></center>
+
   <h3>Class Information</h3>
 
-  <p><a id="week" href="javascript:toggle();">Week 1</a></p>
-  <p id="stuff"><a href="http://webdev.usc.edu/component.cfm?compjoinid=4373&course=104tTh" target="_blank">First webpage: classpage.html (Lab, Due 9/2) </a> 
+  <div id="week">
+  	<p id="week3"><strong>Week 3</strong></p>
+ 	<p id="stuff3">
+ 		<a href="http://webdev.usc.edu/component.cfm?compjoinid=4409&course=104tTh" target="_blank"><strong>Project Proposal, (Assignment, Due 9/16)</strong></a>
+ 		<br>
+ 		<a href="http://webdev.usc.edu/component.cfm?compjoinid=4408&course=104tTh" target="_blank"><strong>Survey Page (Assignment, Due 9/16)</strong></a>
+ 		<br>
+    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4410&course=104tTh" target="blank">Form Quicksheet (Resource)</a>
+    <br>
+    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4406&course=104tTh" target="blank">'Fun' graphic css (Lecture)</a>
+    <br>
+    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4407&course=104tTh" target="blank">Style and stylesheet review, HTML forms (Lecture)</a>
+    <br>
+    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4411&course=104tTh" target="blank">USC Form Scripts (Resource)</a>
+    <br>
+    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4400&course=104tTh" target="blank"><strong>Calendar (Assignment, Due 9/16)</strong></a>
+    <br>
+    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4399&course=104tTh" target="blank">Divs and Layouts (cont.); stylesheets and styles (Lecture)</a>
+    <br>
+ 		<a href="calendars.html" target="_blank">Sample calendar templates (Resource)</a>
+ 	</p>
+  </div>
+
+  <div id="week">
+  	<p id="week2"><strong>Week 2</strong></p>
+  	<p id="stuff2">
+  		<a href="http://webdev.usc.edu/component.cfm?compjoinid=4397&course=104tTh" target="_blank"><strong>Article layout (Assignment, Due 9/9)</strong></a>
+  		<br>
+  		<a href="http://webdev.usc.edu/component.cfm?compjoinid=4396&course=104tTh" target="_blank">Layouts with div (Lecture)</a>
+  		<br>
+  		<a href="http://webdev.usc.edu/component.cfm?compjoinid=4398&course=104tTh" target="_blank">Some layout templates (Resource)</a>
+  		<br>
+  		<a href="http://webdev.usc.edu/component.cfm?compjoinid=4383&course=104tTh" target="_blank"><strong><strong>Resume web page (Assignment, Due 9/4)</strong></strong></a>
+  		<br>
+  		<a href="http://webdev.usc.edu/component.cfm?compjoinid=4382&course=104tTh" target="_blank">CSS Properties (Resource)</a>
+  		<br>
+  		<a href="img-styles.html" target="_blank">img, styles, good code (Lecture)</a>
+  		
+  	</p>
+  </div>
+
+<div id="week">
+  <p id="week1"><strong>Week 1</strong></p>
+  <p id="stuff1">
+  	<a href="http://webdev.usc.edu/component.cfm?compjoinid=4373&course=104tTh" target="_blank"><strong>First web page -- classpage.html (Lab, Due 9/2)</strong></a>
   	<br>
-  <a href="http://webdev.usc.edu/component.cfm?compjoinid=4372&course=104tTh" target="_blank">Basic HTML tags and FTP (Resource)</a></p>
-
-  <p><a href="#">Week 2</a></p>
-
-  <p><a href="#">Week 3</a></p>
+  	<a href="http://webdev.usc.edu/component.cfm?compjoinid=4371&course=104tTh" target="_blank">Basic HTML (Lecture)</a>
+  	<br>
+  	<a href="http://webdev.usc.edu/component.cfm?compjoinid=4372&course=104tTh" target="_blank">Basic HTML tags and FTP files (Resources)</a>
+  	<br>
+  	<a href="http://webdev.usc.edu/component.cfm?compjoinid=4380&course=104tTh" target="_blank">Removing USC notice (Resource)</a>
+  	<br>
+  	<a href="http://webdev.usc.edu/component.cfm?compjoinid=4379&course=104tTh" target="_blank">Setting up web space and uploading files (Resource)</a>
+  	<br>
+  	<a href="http://webdev.usc.edu/component.cfm?compjoinid=4369&course=104tTh" target="_blank">Course Introduction (Lecture)</a>
+  	<br>
+  	<a href="web-pages.html" target="_blank">Intro to Web Pages (Lecture)</a>
+  </p>
+ </div>
 
   <h3>Instructors</h3>
   <p>Patrick Dent <br> dent@usc.edu</p>
+
+  <h3>Office Hours</h3>
+
+  <h3>Final Open Labs</h3>
+  <p>TBA</p>
+
 
 <!--   <h3>Students</h3>
 

@@ -1,3 +1,5 @@
+/* FRONTPAGE */
+
 /* Navigation Menu - Background */
 .navigation {
   /* critical sizing and position styles */
@@ -32,6 +34,7 @@
   font-size: 1.2em;
   text-decoration: none;
   transition: color 0.2s, background 0.5s;
+  text-align:left;
 }
 
 .nav-item a:hover {
@@ -55,9 +58,10 @@
   background-size: 200%;
 }
 
-.site-wrap a{
+.site-wrap a {
   text-decoration:none;
   color:#000;
+  padding-top:5px;
 }
 
 .site-wrap a:visited{
@@ -111,7 +115,12 @@ label[for="nav-trigger"] {
 
 body {
 	/* Without this, the body has excess horizontal scroll when the menu is open */
+  background-color: #B2C9AB;
   overflow-x: hidden;
+}
+
+#week {
+
 }
 
 /* Additional non-critical styles */
@@ -124,7 +133,8 @@ h1, table, p {
 
 h3 {
   max-width: 800px;
-  padding-top: 2%;
+  padding:3px;
+  background-color:#E8DDB5;
   margin: 0 auto 1em;
   font-family: 'Lato', sans-serif;
 }
@@ -141,7 +151,84 @@ code {
 html, body { height: 100%; width: 100%; font-family: 'Lato', sans-serif; }
 
 /* content properties */
-#stuff {
+#week1, #week2, #week3 {
+  border-bottom:3px solid #000;
+  cursor:pointer;
+  padding:2px;
+  background-color:#EDF4ED;
+}
+
+#stuff1, #stuff2 {
+    line-height:30px;
     display:none;
 }
 
+/*Current Week*/
+#stuff3 {
+  line-height:30px;
+}
+
+/* OTHER PAGES */
+
+#page-content {
+  margin:10px;
+}
+
+#header {
+  text-align:center;
+  padding:5px;
+  font-family: 'Lato', sans-serif;
+  padding:2%;
+  font-weight:bold;
+}
+
+#header i {
+  font-weight:none;
+}
+
+#top-banner {
+  padding:10 10 10 15;
+  background-color:#E8DDB5;
+  font-weight:bold;
+}
+
+#content {
+  padding:20px 10 10 10;
+  padding-right:20px;
+}
+
+#content a {
+  color: #EDF4ED;
+}
+
+#content a:hover {
+  color:#000;
+}
+
+#content a:visited {
+  color:#EDF4ED;
+}
+
+#content a:visited:hover {
+  color:#000;
+}
+
+#info-box {
+    padding: 25px;
+    border: 2px solid black;
+    margin: 25px;
+}
+
+h2 {
+  font-size:30px;
+  padding-bottom:15px;
+}
+
+h4 {
+  font-size:20px;
+  padding-bottom:15px;
+}
+
+#content ul {
+  padding-left:5%;
+}
