@@ -113,6 +113,13 @@ label[for="nav-trigger"] {
   box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
 }
 
+#rounded-header {
+  border: 2px solid #97AB91;
+  background-color:#97AB91;
+  border-radius: 25px;
+  width:70%;
+}
+
 body {
 	/* Without this, the body has excess horizontal scroll when the menu is open */
   background-color: #B2C9AB;
@@ -121,6 +128,15 @@ body {
 
 #week {
 
+}
+
+input[type="button"] {
+    border: 1px solid #97AB91;
+    border-radius: 5px;
+    padding:2px;
+    background: #97AB91; /* Or whatever background color you want to use */
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
 }
 
 /* Additional non-critical styles */
