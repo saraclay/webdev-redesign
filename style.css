@@ -117,6 +117,7 @@ label[for="nav-trigger"] {
   border: 2px solid #97AB91;
   background-color:#97AB91;
   border-radius: 25px;
+  padding-top:10px;
   width:70%;
 }
 
