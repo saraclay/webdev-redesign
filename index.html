@@ -36,17 +36,16 @@ $(document).ready(function(){
 <body>
 
 <ul class="navigation">
-	<li class="nav-item"><a href="http://webdev.usc.edu">Home</a></li>
-	<li class="nav-item"><a href="http://www.piazza.com" target="_blank">Course Site</a></li>
-	<li class="nav-item"><a href="http://blackboard.usc.edu" target="_blank">Grades</a></li>
-	<li class="nav-item"><a href="#" target="_blank">Students</a></li>
+	<li class="nav-item"><a href="http://webdev.usc.edu">Course Home</a></li>
+	<li class="nav-item"><a href="http://www.piazza.com" target="_blank">Discussions (Piazza)</a></li>
+	<li class="nav-item"><a href="http://blackboard.usc.edu" target="_blank">Grades (Blackboard)</a></li>
 
   <hr />
 
-  <li class="nav-item"><a href="#">Instructor</a></li>
+  <li class="nav-item"><a href="#">Instructors & TAs</a></li>
   <li class="nav-item"><a href="#" target="_blank">Students</a></li>
-  <li class="nav-item"><a href="#" target="_blank">List</a></li>
   <li class="nav-item"><a href="#" target="_blank">Office Hours</a></li>
+  <li class="nav-item"><a href="#" target="_blank">Open Labs</a></li>
 </ul>
 
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -58,9 +57,9 @@ $(document).ready(function(){
   <br><br>
   <h3>Class Information</h3>
   <p><b>Filter:</b> 
-    <input type="button" value="Lectures"></input> 
-    <input type="button" value="Resources"></input> 
-    <input type="button" value="Assignments"></input></p>
+    <input type="button" id="lecture-button" value="Lectures"></input> 
+    <input type="button" id="resource-button" value="Resources"></input> 
+    <input type="button" id="assignment-button" value="Assignments"></input></p>
 
   <div id="week">
   	<p id="week3"><strong>Week 3 &#x25B4;</strong></p>
@@ -72,17 +71,17 @@ $(document).ready(function(){
  		<br>
     <a href="http://webdev.usc.edu/component.cfm?compjoinid=4400&course=104tTh" target="blank" id="assignment">Calendar (Assignment</a>
     <br>
-    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4410&course=104tTh" target="blank">Form Quicksheet (Resource)</a>
-    <br>
     <a href="http://webdev.usc.edu/component.cfm?compjoinid=4406&course=104tTh" target="blank" id="lecture">'Fun' graphic css (Lecture)</a>
     <br>
     <a href="http://webdev.usc.edu/component.cfm?compjoinid=4407&course=104tTh" target="blank" id="lecture">Style and stylesheet review, HTML forms (Lecture)</a>
     <br>
-    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4411&course=104tTh" target="blank">USC Form Scripts (Resource)</a>
-    <br>
     <a href="http://webdev.usc.edu/component.cfm?compjoinid=4399&course=104tTh" target="blank" id="lecture">Divs and Layouts (cont.); stylesheets and styles (Lecture)</a>
     <br>
- 		<a href="calendars.html" target="_blank">Sample calendar templates (Resource)</a>
+    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4410&course=104tTh" target="blank" id="resource">Form Quicksheet (Resource)</a>
+    <br>
+    <a href="http://webdev.usc.edu/component.cfm?compjoinid=4411&course=104tTh" target="blank" id="resource">USC Form Scripts (Resource)</a>
+    <br>
+    <a href="calendars.html" target="_blank" id="resource">Sample calendar templates (Resource)</a>
  	</p>
   </div>
 
@@ -123,12 +122,14 @@ $(document).ready(function(){
   </p>
  </div>
 
-  <h3>Instructors</h3>
+  <h3>Instructors & TAs</h3>
   <p>Patrick Dent <br> dent@usc.edu</p>
 
   <h3>Office Hours</h3>
 
-<h3>Students</h3>
+  <h3>Open Labs</h3>
+
+  <h3>Students</h3>
 
  <table width="1000px" border="0">
 
@@ -137,7 +138,7 @@ $(document).ready(function(){
 <td align="center" valign="center">
 <img src="img/1.jpg" />
 <br />
-Jacqueline Chao
+Jacqueline Chao <img src="img/home.png" id="home"/>
 <br>
 jacquef@usc.edu
 </td>
@@ -145,7 +146,7 @@ jacquef@usc.edu
 <td align="center" valign="center">
 <img src="img/2.jpg" alt="description here" />
 <br />
-Ka Cheung
+Ka Cheung <img src="img/home.png" id="home"/>
 <br>
 kalicheu@usc.edu
 </td>
@@ -153,7 +154,7 @@ kalicheu@usc.edu
 <td align="center" valign="center">
 <img src="img/3.jpg" alt="description here" />
 <br />
-Franklin Cocchi
+Franklin Cocchi <img src="img/home.png" id="home"/>
 <br>
 cocchi@usc.edu
 </td>
@@ -161,7 +162,7 @@ cocchi@usc.edu
 <td align="center" valign="center">
 <img src="img/4.jpg" alt="description here" />
 <br />
-Yu Dai
+Yu Dai <img src="img/home.png" id="home"/>
 <br>
 yudai@usc.edu
 </td>

@@ -20,16 +20,13 @@
 /* Navigation Menu - List items */
 .nav-item {
   /* non-critical appearance styles */
-  width: 200px;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #000;
+  width: 300px;
 }
 
 .nav-item a {
   /* non-critical appearance styles */
   display: block;
   padding: 1em;
-  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
   color: white;
   font-size: 1.2em;
   text-decoration: none;
@@ -135,9 +132,20 @@ input[type="button"] {
     border: 1px solid #97AB91;
     border-radius: 5px;
     padding:2px;
-    background: #97AB91; /* Or whatever background color you want to use */
     font-family: 'Lato', sans-serif;
     font-size:16px;
+}
+
+#lecture-button {
+  background-color:#7FFF00;
+}
+
+#resource-button {
+  background-color:#D3D3D3;
+}
+
+#assignment-button {
+  background-color:yellow;
 }
 
 /* Additional non-critical styles */
@@ -186,9 +194,20 @@ html, body { height: 100%; width: 100%; font-family: 'Lato', sans-serif; }
   padding:2px;
 }
 
+#resource {
+  background-color:#D3D3D3;
+  padding:2px;
+}
+
 #stuff1, #stuff2 {
     line-height:30px;
     display:none;
+}
+
+
+#home {
+  width:15px;
+  height:15px;
 }
 
 /*Current Week*/
@@ -204,10 +223,14 @@ html, body { height: 100%; width: 100%; font-family: 'Lato', sans-serif; }
 
 #header {
   text-align:center;
-  padding:5px;
   font-family: 'Lato', sans-serif;
   padding:2%;
+  margin-left:10%;
+  margin-right:10%;
   font-weight:bold;
+  border: 2px solid #97AB91;
+  background-color:#97AB91;
+  border-radius: 25px;
 }
 
 #header i {
